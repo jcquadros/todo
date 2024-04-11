@@ -1,3 +1,8 @@
-<input class="todo-input" #inputElementRef (keyup.enter)="submitValue(inputElementRef.value)" [(ngModel)]="title">
-<button class="btn" (click)="submitValue(inputElementRef.value)"> Save </button>
 
+<b class="plus">+</b>
+<input class="todo-input" #inputElementRef (keyup.enter)="submitValue(inputElementRef.value)" [(ngModel)]="title">
+
+
+<!--
+    <button class="btn" (click)="submitValue(inputElementRef.value)"> Save </button>
+-->

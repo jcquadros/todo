@@ -1,6 +1,18 @@
-<div class="todo-item">
-    {{item.title}}
-    <button class="btn btn-red" (click)="removeItem()">
-        remove
-    </button>
+<div class="todo-item">   
+    <div class="todo-title">
+        <b>Section - {{item.title}}</b>
+        
+        <button class="btn btn-red" (click)="removeItem()">
+            remove
+        </button>
+    </div>
+
+    <div class="todo-body">
+        <ul>
+            <li class="sub-todo-item" *ngFor="let subItem of item.subItems">
+                <app-sub-todo-item [item]="subItem" (remove)="removeSubItem($event)"></app-sub-todo-item>
+            </li>
+        </ul>
+        <app-input-button-unit (submit)="addSubItem($event)"></app-input-button-unit>
+    </div>
 </div>

@@ -1,18 +1,18 @@
-.todo-item {
+
+.todo-title {
   padding: 10px 0;
-  border-top: solid 1px #ddd;
   min-height: 30px;
   line-height: 30px;
   display: flex;
   justify-content: space-between;
 }
 
-.todo-checkbox {
-  flex-shrink: 0;
-  margin: auto 1ex auto 0;
+ul {
+  margin-left: 20px;
 }
 
-.todo-title {
-  flex-grow: 1;
-  padding-left: 11px;
+li {
+  list-style-type:lower-latin;
 }
+
+

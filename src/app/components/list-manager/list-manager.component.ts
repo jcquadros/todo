@@ -4,12 +4,12 @@ import { InputButtonUnitComponent } from '../input-button-unit/input-button-unit
 import { TodoItemComponent } from '../todo-item/todo-item.component';
 import { CommonModule } from '@angular/common';
 import { TodoListService } from '../../services/todo-list.service';
-import { TodoManagerComponent } from '../todo-manager/todo-manager.component';
+
 
 @Component({
   selector: 'app-list-manager',
   standalone: true,
-  imports: [TodoItemComponent, InputButtonUnitComponent, CommonModule, TodoManagerComponent],
+  imports: [TodoItemComponent, InputButtonUnitComponent, CommonModule],
   templateUrl: './list-manager.component.html',
   styleUrl: './list-manager.component.css'
 })
@@ -27,7 +27,17 @@ export class ListManagerComponent implements OnInit{
   }
 
   addItem(title: string) {
-    this.todoListService.addItem({ title });
+    if (title.length > 0 ){
+      const newTodoItem: TodoItem = {
+        title: title, subItems: []
+      };
+      
+      this.todoListService.addItem(newTodoItem);
+    }
+  }
+
+  updateItem(item: TodoItem){
+    this.todoListService.updateItem(item);
   }
 
 

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TodoManagerComponent } from './todo-manager.component';
+import { SubTodoItemComponent } from './sub-todo-item.component';
 
-describe('TodoManagerComponent', () => {
-  let component: TodoManagerComponent;
-  let fixture: ComponentFixture<TodoManagerComponent>;
+describe('SubTodoItemComponent', () => {
+  let component: SubTodoItemComponent;
+  let fixture: ComponentFixture<SubTodoItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TodoManagerComponent]
+      imports: [SubTodoItemComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TodoManagerComponent);
+    fixture = TestBed.createComponent(SubTodoItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
