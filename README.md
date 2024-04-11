@@ -27,4 +27,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-## Baseado no Tutorial a seguir: [Todo list tutorial](https://ng-girls.gitbook.io/todo-list-tutorial-portuguese/adding_style)
+## Based in this tutorial: [Todo list tutorial](https://ng-girls.gitbook.io/todo-list-tutorial-portuguese/adding_style)
